@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project_Focus\\C#\\CuaHangDongHo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F9844BB-DC3B-4666-8B3D-18C02299081C}|CuaHangDongHo\\CuaHangDongHo.csproj|d:\\project_focus\\c#\\cuahangdongho\\cuahangdongho\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F9844BB-DC3B-4666-8B3D-18C02299081C}|CuaHangDongHo\\CuaHangDongHo.csproj|solutionrelative:cuahangdongho\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F9844BB-DC3B-4666-8B3D-18C02299081C}|CuaHangDongHo\\CuaHangDongHo.csproj|d:\\project_focus\\c#\\cuahangdongho\\cuahangdongho\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F9844BB-DC3B-4666-8B3D-18C02299081C}|CuaHangDongHo\\CuaHangDongHo.csproj|solutionrelative:cuahangdongho\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Project_Focus\\C#\\CuaHangDongHo\\CuaHangDongHo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CuaHangDongHo\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Project_Focus\\C#\\CuaHangDongHo\\CuaHangDongHo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CuaHangDongHo\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T14:59:38.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Project_Focus\\C#\\CuaHangDongHo\\CuaHangDongHo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CuaHangDongHo\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Project_Focus\\C#\\CuaHangDongHo\\CuaHangDongHo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CuaHangDongHo\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T14:59:30.597Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

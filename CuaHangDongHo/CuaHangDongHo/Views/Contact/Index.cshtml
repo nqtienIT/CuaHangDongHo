@@ -1,0 +1,85 @@
+﻿@model CuaHangDongHo.Models.VMContact
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="contact-page" class="container">
+    <div class="bg">
+        <div class="row">
+            @if (!String.IsNullOrEmpty(ViewBag.SuccessMsg))
+            {
+                <div class="alert alert-success col-12 mt-3" role="alert">
+                    @ViewBag.SuccessMsg
+                </div>
+            }
+            <div class="col-sm-12">
+                <h2 class="title text-center">Liên hệ với chúng tôi</h2>
+                <div id="gmap" class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.734024718619!2d108.253227!3d15.975260299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4sIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1734750959690!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-8">
+                <div class="contact-form">
+                    <h2 class="title text-center">Thông tin của bạn</h2>
+                    <div class="status alert alert-success" style="display: none"></div>
+                    <form action="@Url.Action("Create", "Contact")" id="main-contact-form" class="contact-form row" name="contact-form" method="post">
+                        <div class="form-group col-md-6">
+                            @Html.TextBoxFor(m => m.FullNameContact, new { @class = "form-control", placeholder = "Họ và tên" })
+                            @Html.ValidationMessageFor(model => model.FullNameContact, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-6">
+                            @Html.TextBoxFor(m => m.PhoneContact, new { @class = "form-control", placeholder = "Số điện thoại" })
+                            @Html.ValidationMessageFor(model => model.PhoneContact, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-12">
+                            @Html.TextBoxFor(m => m.EmailContact, new { @class = "form-control", placeholder = "Email", type = "email" })
+                            @Html.ValidationMessageFor(model => model.EmailContact, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-12">
+                            @Html.TextBoxFor(m => m.TitleContact, new { @class = "form-control", placeholder = "Tiêu đề" })
+                            @Html.ValidationMessageFor(model => model.TitleContact, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-12">
+                            @Html.TextAreaFor(m => m.DetailContact, new { @class = "form-control", placeholder = "Nội dung", style = "height: 160px" })
+                            @Html.ValidationMessageFor(model => model.DetailContact, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="submit" name="submit" class="btn btn-primary pull-right" value="Gửi">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="contact-info">
+                    <h2 class="title text-center">thông tin chúng tôi</h2>
+                    <address>
+                        <p><b>Chịu trách nhiệm</b>: Quang Tiên</p>
+                        <p><b>Địa chỉ</b>: 470 Đường Trần Đại Nghĩa, phường Hòa Quý, quận Ngũ Hành Sơn, Đà Nẵng</p>
+                        <p><b>Số điện thoại</b>: 0971096373</p>
+                        <p><b>Fax</b>: 123</p>
+                        <p><b>Email</b>: nqtien.it@gmail.com</p>
+                    </address>
+                    <div class="social-networks">
+                        <ul>
+                            <li>
+                                <a href="@Model.FacebookShop"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="@Model.TwitterShop"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="@Model.ZaloShop"><i class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--/#contact-page-->
